@@ -452,6 +452,16 @@ def inputs():
 print(*(line.upper() for line in inputs()),sep='\n')
 ```
 
+lines = []
+while True:
+    line = input()
+    if line:
+        lines.append(line.upper())
+    else:
+        break
+text = '\n'.join(lines)
+print(text)
+
 ---
 
 [**_go to previous day_**](https://github.com/darkprinx/100-plus-Python-programming-exercises-extended/blob/master/Status/Day%201.md "Day 1")

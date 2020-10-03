@@ -381,6 +381,34 @@ def count_letters_digits(counters,char_to_check):
 print('LETTERS {0}\nDIGITS {1}'.format(*reduce(count_letters_digits,input(),[0,0])))
 ```
 
+answer =input("Text and digits: ")
+ 
+# numbers = sum(c.isdigit() for c in s)
+# letters = sum(c.isalpha() for c in s)
+
+
+
+
+def count_letters_numbers(answer):
+  lst_letters =[]
+  lst_numbers = []
+
+  for i in answer:
+    if i.isdigit():
+      lst_numbers.append(i)
+    elif i.isalpha():
+      lst_letters.append(i)
+    else:
+      continue
+
+  print(f"LETTERS: {len(lst_letters)}")
+  print(f"DIGITS: {len(lst_numbers)}")
+
+
+
+
+count_letters_numbers(answer)
+
 ---
 
 ## Conclusion

@@ -230,6 +230,29 @@ while 1:
         break
     print(f'Your current balance is: {money}')
 ```
+
+def compute_deposit(d):
+    count = 0
+    for i in d:
+       count+=int(i)
+    return count
+
+
+def compute_withdrawal(w):
+    count = 0
+    for i in w:
+       count+=int(i)
+    return count
+
+# print(compute_deposit(deposit))
+# print(compute_withdrawal(withdrawal))
+
+def compute_the_net_amount(Deposit,Withdrawal):
+    total = 0
+    total = Deposit - Withdrawal
+    return total
+
+print(f"The Net Amount: {compute_the_net_amount(compute_deposit(deposit), compute_withdrawal(withdrawal))}")
 ---
 
 [**_go to previous day_**](https://github.com/darkprinx/100-plus-Python-programming-exercises-extended/blob/master/Status/Day%204.md "Day 4")

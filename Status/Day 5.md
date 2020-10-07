@@ -56,7 +56,12 @@ for i in lst:
 seq = [str(i) for i in seq]   # All the integers are converted to string to be able to apply join operation
 print(",".join(seq))
 ```
+x = input("Type here: ").split(",")
+print(x)
 
+answer2 = [int(i)**2 for i in x if int(i) % 2 !=0]
+
+print(answer2)
 ---
 
 **_There were a mistake in the the test case and the solution's whice were notified and fixed with the help of @dwedigital. My warm thanks to him._**
